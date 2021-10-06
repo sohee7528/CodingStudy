@@ -1,12 +1,12 @@
-n=int(input()) // 몇 개의 동전이 있는지 입력 받기
-number=list(map(int,input().split())) //리스트에 화폐 단위 받아오기
-number.sort() // 화폐 단위 받아온 리스트 오름차순으로 정렬
+n=int(input()) 
+number=list(map(int,input().split())) 
+number.sort() 
 
-count=1 //화폐 단위 받아온 것 더해가며 1부터 비교
+count=1 
 
-for x in number: // number 리스트에서 순차적으로 하나씩 값 빼오기
-    if count < x: // count가 x보다 작은 경우 for문 탈출
+for x in number: 
+    if count < x: 
         break
-    count= count+ x // count가 x보다 같거나 큰 경우 count에 x값 더하면서 갱신
+    count= count+ x 
 
-print(count) // count 출력
+print(count) 
